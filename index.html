@@ -22,7 +22,7 @@
         <div id = "home">
             <div>
                 <h1 class = "home-title">Hi, I am <span class = "auto-type"></span></h1>
-                <h2 class = "home-description"> A <span id = "currentAge"> </span> Year Old Student at TMU</h2>
+                <h2 class = "home-description"> An <span id = "currentAge"> </span> Year Old Student at TMU</h2>
                 <div class = "home-button">
                     <a href = "#about"><button class = "generic-button">View More</button></a>
                 </div>
@@ -44,26 +44,68 @@
             <h2 class = "content-section-title">Projects</h2>
             <div class = "project-list">
                 <div class = "project-item">
-                    <div class = "project-image-container"></div>
-                <!-- one project -->
-                    <img class = "project-image-thumbnail" src = "" alt = "project item"/>
-                <div>
-                    <h3>Project Name</h3>
-                    <p>project description</p>
-                    <a href = ""><button>View Project</button></a>
+                    <div class = "project-image-container">
+                        <img class = "project-image-thumbnail" src = "" alt = "project item"/>
+                    </div>
+                    <div class = "project-text-container">
+                        <h3 class = "project-title">Project Name</h3>
+                        <div class = "content-section-text">
+                            <p>project description
+                            </p>
+                        </div>
+                        <a href = ""><button>View Project</button></a>
+                    </div>
                 </div>
+                <div class = "project-item">
+                    <div class = "project-image-container">
+                        <img class = "project-image-thumbnail" src = "" alt = "project item"/>
+                    </div>
+                    <div class = "project-text-container">
+                        <h3 class = "project-title">Project Name</h3>
+                        <div class = "content-section-text">
+                            <p>project description
+                            </p>
+                        </div>
+                        <a href = ""><button>View Project</button></a>
+                    </div>
+                </div>
+                <div class = "project-item">
+                    <div class = "project-image-container">
+                        <img class = "project-image-thumbnail" src = "" alt = "project item"/>
+                    </div>
+                    <div class = "project-text-container">
+                        <h3 class = "project-title">Project Name</h3>
+                        <div class = "content-section-text">
+                            <p>project description
+                            </p>
+                        </div>
+                        <a href = ""><button>View Project</button></a>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
-        <div class = "content" id = "contact">
-            <div class = "content-section-2">
-                <img class = "content-image" src = "" alt = "Karishvan Ragunathan" />
+        <div class="content" id="contact">
+            <div id="contact-rightpadding" class="content-section-2">
+                <h2 class="content-section-title">Contact Me</h2>
+                <div class="content-section-text">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit est voluptatem quisquam sequi
+                        totam.
+                        Deleniti quidem tempora eaque quo explicabo. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit est voluptatem quisquam sequi
+                        totam.
+                        Deleniti quidem tempora eaque quo explicabo. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                    </p>
+                </div>
             </div>
-
-            <div>
-                <h2 class = "content-section-title">About Me</h2>
-                <p class = "content-section-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, doloribus earum, porro harum nesciunt, enim magni nulla nemo consequatur eius reiciendis quia repellat labore id cupiditate dolorem eaque laudantium ex!</p>
-
+            <div class="content-section-1">
+                <img class="content-image" src="./assets/image4.jpg" alt="Karishvan Ragunathan" />
             </div>
         </div>
 
@@ -81,17 +123,27 @@
     <script>
 
         let currentYear = new Date().getFullYear();
+        let currentMonth = new Date().getMonth()+1;
+        let currentDay = new Date().getDate();
+        
         let birthYear = 2004;
+        let birthMonth = 10;
+        let birthDay = 22;
 
-        document.getElementById("currentAge").innerHTML = currentYear - birthYear;
+        currAge = currentYear-birthYear
+        if (!(currentMonth > birthMonth || (currentMonth == birthMonth && currentDay >= birthDay))) {
+            currAge -=1
+        }
+
+        document.getElementById("currentAge").innerHTML = currAge;
 
 
         let typed = new Typed(".auto-type", {
-            strings: ["Karishvan Ragunathan^1000", "Hardworker^1000"],
+            strings: ["Karishvan Ragunathan^1000", "a Hardworker^1000", "First Year CS Student^1000"],
             typeSpeed: 100,
             backSpeed: 100,
             loop: true,
-            showCursor = false
+            showCursor : false,
         })
     </script>
     
