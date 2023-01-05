@@ -167,6 +167,25 @@ html {
     margin: 0 20px 20px 0;
 }
 
+.project-button {
+    margin-left: 80px;
+    background-color: rgb(44, 44, 36);
+    color:white;
+    height: 36px;
+    width: 105px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s opacity 0.15s;
+}
+
+.project-button:hover {
+    background-color: white;
+    color: rgb(44,44,36);
+}
+.project-button:active {
+    opacity: 0.7;
+}
+
 .project-image-container {
     flex-basis: 100%;
 }
