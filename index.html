@@ -5,19 +5,26 @@
     <head>
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-        <link rel = "stylesheet" href = "./style.css">
+        <link rel = "stylesheet" href = "styles/general.css">
+        <link rel = "stylesheet" href = "styles/header.css">
+        <link rel = "stylesheet" href = "styles/home.css">
+        <link rel = "stylesheet" href = "styles/about.css">
+        <link rel = "stylesheet" href = "styles/projects.css">
+        <link rel = "stylesheet" href = "styles/contact.css">
+        
+        
         <title> Karishvan Ragunathan</title>
     </head>
     <body>
         <div class = "container">
-            <div class = "nav-container">
+            <nav class = "nav-container">
                 <ul>
                     <li class = "nav-item"><a class = "nav-link" href = "#home">Home </a></li>
                     <li class = "nav-item"><a class = "nav-link" href = "#about">About</a></li>
                     <li class = "nav-item"><a class = "nav-link" href = "#contact">Contact</a></li>
                     <li class = "nav-item"><a class = "nav-link" href = "#projects">Projects</a></li>
                 </ul>
-             </div>
+            </nav>
 
         <div id = "home">
             <div>
@@ -122,27 +129,30 @@
                 <div class="content-section-text">
                     <p>
                         <a href = "mailto: karishvanragunathan@gmail.com">
-                            Email
+                            <button class = "contact-button">
+                                <div><img class = "icon-logo" src = "icons/mail-logo.png"></div>
+                                <div>Email</div>
+                            </button>
                         </a>
                         <br>
                         <a href = "https://github.com/Karishvan" target = "_blank">
-                            GitHub
+                            <button class = "contact-button">
+                                <div><img class = "icon-logo" src = "icons/github-logo.png"></div>
+                                <div>GitHub</div>
+                            </button>
                         </a>
                     </p>
                 </div>
             </div>
             <div class="content-section-1">
-                <img class="content-image" src="./assets/image4.jpg" alt="Karishvan Ragunathan" />
+                <img class="content-image" src="photos/ExposureValuesCA-006_Transparent.png" alt="Karishvan Ragunathan" />
             </div>
         </div>
 
-        <div>
-            <img class = "content-image" src = "photos/ExposureValuesCA-006_Transparent.png" alt = "Karishvan Ragunathan" />
-        </div>
+        
 
 
         </div>
-    </div>
     </body>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
